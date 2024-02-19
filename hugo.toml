@@ -2,7 +2,7 @@ baseURL = "https://lcg.ognotes.com"
 
 languageCode = "en-us"
 DefaultContentLanguage = "en"
-title = "Linux Certification Guide"
+# title = "Linux Certification Guide"
 theme = "hugo-theme-techdoc"
 
 hasCJKLanguage = true
@@ -12,12 +12,74 @@ defaultContentLanguage = "en"
 defaultContentLanguageInSubdir= true
 enableMissingTranslationPlaceholders = true
 
+[languages]
+  [languages.en]
+    contentDir = 'content/en'
+    disabled = false
+    languageCode = 'en-US'
+    languageDirection = 'ltr'
+    languageName = 'English'
+    title = 'Linux Certification Guide'
+    weight = 1
+    [languages.en.params]
+      subtitle = 'Reference, Tutorials, and Explanations'
+      description = 'Working to be Linux most omnibus certification guide'
+      
+    [languages.en.menus]
+[[languages.en.menus.main]]
+    name = "Home"
+    url = "/en"
+    weight = 1
+    identifier = 'home'
+    pre = "<i class='fa fa-heart'></i>&nbsp;"
+
+[[languages.en.menus.main]]
+    name = "X(Twitter)"
+    url = "https://x.com/orlando_gentil"
+    weight = 2
+    identifier = 'twitter'
+    # pre = "<b>pre!</b> "
+    # post = " <b>post!</b>"
+    #[menu.main.params]
+    #  class = 'twitter-menu-item'
+
+  [languages.pt]
+    contentDir = 'content/pt'
+    disabled = false
+    languageCode = 'pt-BR'
+    languageDirection = 'ltr'
+    languageName = 'Brazilian Portuguese'
+    title = 'Linux Certification Guide'
+    weight = 2
+    [languages.pt.params]
+      subtitle = 'Referenz, Tutorials und Erklärungen'
+      description = "Trabalhando para ser o mais completo guia para certificação Linux"
+
+    [languages.pt.menus]
+[[languages.pt.menus.main]]
+    name = "Início"
+    url = "/pt"
+    weight = 1
+    identifier = 'home'
+    pre = "<i class='fa fa-heart'></i>&nbsp;"
+
+[[languages.pt.menus.main]]
+    name = "X(Twitter)"
+    url = "https://x.com/orlando_gentil"
+    weight = 2
+    identifier = 'twitter'
+    # pre = "<b>pre!</b> "
+    # post = " <b>post!</b>"
+    #[menu.main.params]
+    #  class = 'twitter-menu-item'
+
+
 [params]
 
     # Source Code repository section
-    description = "Linux Certification Guide"
-    github_repository = "https://github.com/thingsym/hugo-theme-techdoc"
-    version = "1.0.0"
+
+    github_repository = "hhttps://github.com/ognotes/LCG"
+    version = "0.0.1"
 
     # Documentation repository section
     # documentation repository (set edit link to documentation repository)
@@ -45,7 +107,7 @@ enableMissingTranslationPlaceholders = true
 
     # Documentation Menu section
     # Menu style settings
-    menu_style = "open-menu" # "open-menu" or "slide-menu" or "" blank is as no sidebar
+    menu_style = "slide-menu" # "open-menu" or "slide-menu" or "" blank is as no sidebar
 
     # Date format
     dateformat = "2024-02-19T13:00:00Z" # default "2 Jan 2006"
@@ -68,25 +130,25 @@ enableMissingTranslationPlaceholders = true
     algolia_appId = ""
     algolia_apiKey = "" # Search-Only API Key
 
-# Global menu section
+# Global menu section (moved inside langhuage section)
 # See https://gohugo.io/content-management/menus/
-[menu]
-    [[menu.main]]
-        name = "Home"
-        url = "/"
-        weight = 1
-        identifier = 'home'
-        pre = "<i class='fa fa-heart'></i>&nbsp;"
+#[menu]
+#    [[menu.main]]
+#        name = "Home"
+#        url = "/"
+#        weight = 1
+#        identifier = 'home'
+#        pre = "<i class='fa fa-heart'></i>&nbsp;"
 
-    [[menu.main]]
-        name = "X(Twitter)"
-        url = "https://x.com/orlando_gentil"
-        weight = 2
-        identifier = 'twitter'
-        # pre = "<b>pre!</b> "
-        # post = " <b>post!</b>"
-        [menu.main.params]
-          class = 'twitter-menu-item'
+#    [[menu.main]]
+#        name = "X(Twitter)"
+#        url = "https://x.com/orlando_gentil"
+#        weight = 2
+#        identifier = 'twitter'
+#        # pre = "<b>pre!</b> "
+#        # post = " <b>post!</b>"
+#        [menu.main.params]
+#          class = 'twitter-menu-item'
 
 # Markup configure section
 # See https://gohugo.io/getting-started/configuration-markup/
@@ -125,3 +187,4 @@ enableMissingTranslationPlaceholders = true
         "tags",
         "categories",
     ]
+

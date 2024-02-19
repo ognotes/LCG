@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Understand and use essential tools on Linux Certification Guide</title>
+    <link>https://lcg.ognotes.com/en/system_administrator/chapter01/</link>
+    <description>Recent content in Understand and use essential tools on Linux Certification Guide</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 19 Feb 2024 11:09:06 -0600</lastBuildDate>
+    <atom:link href="https://lcg.ognotes.com/en/system_administrator/chapter01/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Access a shell prompt and issue commands with correct syntax</title>
+      <link>https://lcg.ognotes.com/en/system_administrator/chapter01/01/</link>
+      <pubDate>Mon, 19 Feb 2024 11:09:06 -0600</pubDate>
+      <guid>https://lcg.ognotes.com/en/system_administrator/chapter01/01/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Use input-output redirection (&gt;, &gt;&gt;, |, 2&gt;, etc.)</title>
+      <link>https://lcg.ognotes.com/en/system_administrator/chapter01/02/</link>
+      <pubDate>Mon, 19 Feb 2024 11:09:06 -0600</pubDate>
+      <guid>https://lcg.ognotes.com/en/system_administrator/chapter01/02/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
